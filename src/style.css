@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #45394d;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+.pokedex-header {
+  margin-bottom: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-150%, -50%);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.pokedex {
+  position: relative;
+}
+
+.pokedex:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.pokecard {
+  width: 230px;
+  display: inline-block;
+  position: relative;
+  background: #ffe868;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pokecard:not(:last-child) {
+  margin-right: calc((100% - 4 * 230px) / 3);
+}
+
+.pokecard:hover {
+  box-shadow: 2px 2px 10px 6px rgba(255, 255, 255, 0.5);
+  transform: translateZ(14px);
+}
+
+.pokename {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pokeimg {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.pokeimg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.pokeinfo {
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+}
+
+.pokeinfo-label {
+  font-weight: 700;
+  margin-right: 20px;
+}
